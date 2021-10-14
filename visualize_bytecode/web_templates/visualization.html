@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Python Bytecode Visualization</title>
+    <link rel="stylesheet" type="text/css" href="./visualization.css">
+    <script src="https://d3js.org/d3.v5.js"></script>
+  </head>
+  <body>
+    <header>
+      <div>
+	<h1 id="header-title">Python Bytecode Visualization</h1>
+	<p id="header-sub-title"></p>
+      </div>
+    </header>
+    <section id="overall-visualization">
+      <table>
+	<tr>
+      	  <td>
+	    <table id="code-table"></table>
+	  </td>
+      	  <td id="cfg-cell">
+	    <div id="cfg-container">
+	      <svg id="cfg-svg">
+                <defs>
+                  <marker id="arrowhead" markerWidth="6" markerHeight="4" refX="6" refY="2" orient="auto">
+                    <polygon points="0 0, 6 2, 0 4" />
+                  </marker>
+                </defs>
+	      </svg>
+	    </div>
+	  </td>
+	</tr>
+      </table>
+    </section>
+    <script src="visualization.js"></script>
+  </body>
+</html>

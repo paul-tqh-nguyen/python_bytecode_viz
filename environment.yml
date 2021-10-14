@@ -1,0 +1,5 @@
+name: bytecode
+dependencies:
+  - python
+  - networkx
+  - black
